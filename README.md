@@ -58,7 +58,7 @@ Model 1: Decision Tree Hyperlink to python notebook
 Model 2: Hyperlink
 -	Image Screen shot
 Model 3: Hyperlink
-[GNB](Resources/images/GNB image.jpg)
+-Image
 Model 4: 
 -	Image
 Model 5:
