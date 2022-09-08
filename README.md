@@ -1,15 +1,11 @@
 # Project 4: Machine Learning Models in Predicting Cardiovascular Disease 
 <p align = "center">
-    <img src="https://physicians.wustl.edu/wp-content/uploads/2020/06/heartbody.jpg" />
+    <img src="https://physicians.wustl.edu/wp-content/uploads/2020/06/heartbody.jpg", width="500"/>
 </p>
 
 ## Group 4 Members:
 
-* Alex Riiska
-* Laurane Gerber
-* Nikki Dao
-* Victoria Sandoval
-* Yuntian Xue
+Alex Riiska, Laurane Gerber, Nikki Dao, Victoria Sandoval, Yuntian Xue
 
 ## Project Goal: 
 
@@ -26,7 +22,7 @@ csv file: [heart.csv](Resources/heart.csv)
 | --- | --- |
 | `Age` | Patient Age |
 | `Sex` | Patient Sex; F - Female, M - Male |
-| `ChestPainType` | ASY – Asymptomatic, ATA – Atypical Angina, NAP – Non-Anginal Pain, TA – Typical Angina   |
+| `ChestPainType` | ASY – Asymptomatic, ATA – Atypical Angina, NAP – Non-Anginal Pain, TA – Typical Angina |
 | `RestingBP` | Patient blood pressure at rest |
 | `Cholesterol` | Patient cholesterol level |
 | `FastingBS` | Patient blood sugar when fasting |
