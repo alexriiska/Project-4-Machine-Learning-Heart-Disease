@@ -38,11 +38,16 @@ Data can be found in the following links: [Kaggle link](https://www.kaggle.com/d
 OUTLINE DATE IMAGE
 
 ## Data Preparation and Modeling
-
+Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. 
 
 Pre-procression Step: 
-ETL – Clean data, column X was removed, load into, dropped irrelevant columns
+ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
 Scaling –  
+
+Tools Used:
+-	SQLAlchemy : connecting to Postgres database
+-	Python SKLearn libraries
+-	Plotly.express/ matplotlib/ seaborn : graphs and visualizations
 
 Model 1: Decision Tree Hyperlink to python notebook
 -	About: why we chose, the %
@@ -67,6 +72,6 @@ Scripts (All Model notebook)
 | Random Forest | 0.875 |
 | Gaussian Naive Bayes | 0.883   |
 | KNN | 0. |
-| Decision Tree | 0. |
+| Decision Tree | 0.8384 |
 | Neural Network | 0. |
 
