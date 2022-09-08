@@ -3,8 +3,6 @@
     <img src="https://physicians.wustl.edu/wp-content/uploads/2020/06/heartbody.jpg" />
 </p>
 
-<br>
-
 ## Group 4 Members:
 
 * Alex Riiska
@@ -12,8 +10,6 @@
 * Nikki Dao
 * Victoria Sandoval
 * Yuntian Xue
-
-<br>
 
 ## Project Goal: 
 
@@ -24,8 +20,6 @@ By implementing multiple maching learning models, we aim to determine whether pa
 **Data Source:**  
 > [Kaggle link](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)  
 csv file: [heart.csv](Resources/heart.csv)  
-
-<br>
 
 **Columns:**  
 | Column Name | Description |
@@ -68,8 +62,6 @@ Model 5:
 Data
 Images Folder
 Scripts (All Model notebook)
-
-<br>
 
 **Results:**
 | Model Name | Accuracy |
