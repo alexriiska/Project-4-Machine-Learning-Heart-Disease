@@ -64,7 +64,7 @@ Scripts (All Model notebook)
 | --- | --- |
 | Logistic Regression | 0. |
 | Random Forest | 0.875 |
-| Gaussian Naive Bayes | 0.   |
+| Gaussian Naive Bayes | 0.883   |
 | KNN | 0. |
 | Decision Tree | 0. |
 | Neural Network | 0. |
