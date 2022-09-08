@@ -49,7 +49,7 @@ Tools Used:
 -	Python SKLearn libraries
 -	Plotly.express/ matplotlib/ seaborn : graphs and visualizations
 
-Model 1: Decision Tree Hyperlink to python notebook
+Model 1: Decision Tree (notebook)
 -	About: why we chose, the %
 -	Image Screen Shot
 Model 2: Hyperlink
