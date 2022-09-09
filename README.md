@@ -13,7 +13,7 @@ By implementing multiple maching learning models, we aim to determine whether pa
 
 Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease. This dataset was created from 5 other dataset from Cleveland, Hungarian, Switzerland, Long Beach VA, and Stalog, with a total of 918 observations of Heart Disease related cases. 
 
-Data can be found in [Kaggle link](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction), csv file: [heart.csv](Resources/heart.csv)  
+**Data Source:** [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction), csv file: [heart.csv](Resources/heart.csv)  
 
 **Columns Details:**  
 | Column Name | Description |
@@ -69,7 +69,7 @@ Features Importance Correlation Heatmap             |  Feature Importance Correl
 ## Machine Learning Models:
 Since our response variable is binary categorical variable, we will be using classification algorithms such as: Logistic Regression, Random Forest Classifier, Decision Tree Classifier, K-Nearest Neighbor, and Gaussian Naive Bayes. We believe these models would be well fitted as our categorical variable classified as 0: Non-Carriers and 1: Heart Disease Carriers. We did considered the typical 80:20 ratio of 80% train and 20% test data split and adequate sample size in our testing. 
 
-**Scaling: Standardization :**
+**Scaling - Standardization :**
 The idea behind using standardization before applying machine learning algorithm is to transform you data such that its distribution will have mean value 0 and standard deviation as 1. We use Standard Scaling in our K-NN and Logistic Regression Models instead of Min and Max Scaler. Note that Decision Tree, Random Forest, and Gaussian Naive Bayes algorithms do not require Feature Scaling due to the nature that they are not sensitive to the variance in the data. 
 
 #### Model 1: Decision Tree Classifier  __[Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree.ipynb)__
