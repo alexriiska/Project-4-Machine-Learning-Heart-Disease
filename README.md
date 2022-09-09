@@ -9,7 +9,7 @@
 
 By implementing multiple maching learning models, we aim to determine whether patients' heart disease can be predicted by clinical cardiovascular diseases data. Using ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to applying various machine learning models. 
 
-## Data Description: 
+## Data Descriptions: 
 
 Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease.  
 
@@ -34,29 +34,32 @@ Data can be found in the following links: [Kaggle link](https://www.kaggle.com/d
 
 OUTLINE DATE IMAGE
 
-## Data Preparation and Modeling
-Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease.
+## Data Preparation:
+Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
-Pre-procression Step: 
+**Pre-procression Step:**
 -   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
--   Scaling –  
+-   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
 
-Tools Used:
+**Tools Used:**
 -	SQLAlchemy : connecting to Postgres database
 -	Python SKLearn libraries
 -	Plotly.express/ matplotlib/ seaborn : graphs and visualizations
 
-Model 1: Decision Tree (notebook)
+## Machine Learning Models:
+Since our response variable is binary categorical variable, we will be using classification algorithms such as: Logistic Regression, Random Forest Classifier, Decision Tree Classifier, K-Nearest Neighbor, and Gaussian Naive Bayes
+
+#### Model 1: Decision Tree Classifier (notebook hyperlink)
 -	About: why we chose, the %
 -	Image Screen Shot
-Model 2: Hyperlink
+##### Model 2: Logistic Regression (notebook hyperlink)
 -	Image Screen shot
-Model 3: Hyperlink
+##### Model 3: Random Forest Classifier (notebook hyperlink)
 -Image
-Model 4: 
+##### Model 4: K-Nearest Neighbor(notebook hyperlink)
 -	Image
-Model 5:
--	Image
+##### Model 5: Gaussian Naive Bayes (notebook hyperlink)
+-	Image 
 
 Data
 Images Folder
@@ -72,3 +75,5 @@ Scripts (All Model notebook)
 | Decision Tree | 0.8384 |
 | Neural Network | 0. |
 
+## Conclusion:
+The goal of Statistical Modeling is to summarize test results 
