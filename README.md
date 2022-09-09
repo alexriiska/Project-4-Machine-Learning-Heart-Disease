@@ -54,7 +54,7 @@ The idea behind using standardization before applying machine learning algorithm
 
 #### Model 1: Decision Tree Classifier (notebook hyperlink)
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
--	Heart Disease Prediction using Decision Tree graph
+					Heart Disease Prediction using Decision Tree graph
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
 #### Model 2: Logistic Regression (notebook hyperlink)
 -	Description of the Model and Images, with analysis 
