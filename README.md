@@ -39,7 +39,9 @@ Exploring data allows us to better understand the relationship of the predictor 
 
 **Pre-procression Step:**  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Data_Exploration.ipynb)__
 -   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
-<img align="center" src="/Images/ETL_outliers.png" width="1100" />
+| Visualizing Outliers  | 
+| ------------- | 
+| <img align="center" src="/Images/ETL_outliers.png" width="1100" />  | 
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
 <p float="left">
