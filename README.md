@@ -1,15 +1,13 @@
-# Project 4: Machine Learning Models in Predicting Cardiovascular Disease 
+# Project 4: Machine Learning Models in Cardiovascular Disease Prediction
 <p align = "center">
     <img src="Resources/img1_heartbody.jpeg", width="1000"/>
 </p>
 
-## Group 4 Members:
-
-Alex Riiska, Laurane Gerber, Nikki Dao, Victoria Sandoval, Yuntian Xue
+** Group 4 Members: Alex Riiska, Laurane Gerber, Nikki Dao, Victoria Sandoval, Yuntian Xue
 
 ## Project Goal: 
 
-By implementing multiple maching learning models, we aim to determine whether patients' heart failure can be predicted by clinical cardiovascular diseases data. 
+By implementing multiple maching learning models, we aim to determine whether patients' heart disease can be predicted by clinical cardiovascular diseases data. Using ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to applying various machine learning models. 
 
 ## Dataset: 
 
