@@ -58,7 +58,7 @@ Since our response variable is binary categorical variable, we will be using cla
 **Scaling: Standardization :**
 The idea behind using standardization before applying machine learning algorithm is to transform you data such that its distribution will have mean value 0 and standard deviation as 1. We use Standard Scaling in our K-NN and Logistic Regression Models instead of Min and Max Scaler. Note that Decision Tree, Random Forest, and Gaussian Naive Bayes algorithms do not require Feature Scaling due to the nature that they are not sensitive to the variance in the data. 
 
-#### Model 1: Decision Tree Classifier ([notebook hyperlink])(https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree.ipynb)
+#### Model 1: Decision Tree Classifier  __[NoteBook](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree.ipynb)__
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
 -  	Decision Tree Classifier score 83% in accuracy. Below is the Heart Disease Prediction using Decision Tree graph		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
