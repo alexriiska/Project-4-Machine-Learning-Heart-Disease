@@ -47,6 +47,10 @@ Exploring data allows us to better understand the relationship of the predictor 
   <img src="/Images/age_distribution.png" width="280" /> 
   <img src="/Images/gender_distribution.png" width="280" />
   <img src="/Images/paintype_distribution.png" width="280" />
+  <img src="/Images/bloodpressure_distribution.png" width="280" />
+  <img src="/Images/bloodsugar_distribution.png" width="280" />
+  <img src="/Images/cholesterol_distribution.png" width="280" />
+  <img src="/Images/heartrate_distribution.png" width="280" />
 </p>
 
 In this process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
