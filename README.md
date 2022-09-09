@@ -39,7 +39,14 @@ Exploring data allows us to better understand the relationship of the predictor 
 
 **Pre-procression Step:**
 -   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
+<img align="center" src="/Images/ETL_outliers.png" width="1200" />
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
+(Insert tables of graphs and charts)
+
+In our EDA process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
+
+Using correlation function to compute pairwise correlations, we also found that the key importance features are OldPeak and Maximum Heart Rate have the strongest impact in our predictions.
+<img align="center" src="/Images/correlation_plot.png" width="1200" />
 
 **Tools Used:**
 -	SQLAlchemy : connecting to Postgres database
@@ -54,9 +61,8 @@ The idea behind using standardization before applying machine learning algorithm
 
 #### Model 1: Decision Tree Classifier (notebook hyperlink)
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
--  	Decision Tree Classifier score 83% in accuracy			
+-  	Decision Tree Classifier score 83% in accuracy. Below is the Heart Disease Prediction using Decision Tree graph		
 	<img align="center" src="/Images/decision_tree_map.png" width="1200" />
-Heart Disease Prediction using Decision Tree graph
 #### Model 2: Logistic Regression (notebook hyperlink)
 -	Description of the Model and Images, with analysis 
 #### Model 3: Random Forest Classifier (notebook hyperlink)
