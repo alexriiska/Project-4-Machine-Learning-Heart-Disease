@@ -48,7 +48,7 @@ Exploring data allows us to better understand the relationship of the predictor 
 </figure>
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
-<p float="left">
+<p float="center">
   <img src="/Images/ETL_0_vs_1.png" width="350" />
   <img src="/Images/age_distribution.png" width="350" /> 
   <img src="/Images/gender_distribution.png" width="350" />
