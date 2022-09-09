@@ -6,7 +6,7 @@
 **Group 4 Members:** Alex Riiska, Laurane Gerber, Nikki Dao, Victoria Sandoval, Yuntian Xue
 
 ### Project Goal: 
-
+***
 By implementing multiple maching learning models, we aim to determine whether patients' heart disease can be predicted by clinical cardiovascular diseases data. Using ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to applying various machine learning models. 
 
 ## Dataset: 
