@@ -39,14 +39,13 @@ Exploring data allows us to better understand the relationship of the predictor 
 
 **Pre-procression Step:**
 -   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
-<img align="center" src="/Images/ETL_outliers.png" width="1200" />
+<img align="center" src="/Images/ETL_outliers.png" width="1000" />
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
 (Insert tables of graphs and charts)
 
-In our EDA process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
-
+In this process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
 Using correlation function to compute pairwise correlations, we also found that the key importance features are OldPeak and Maximum Heart Rate have the strongest impact in our predictions.
-<img align="center" src="/Images/correlation_plot.png" width="1200" />
+<img align="center" src="/Images/correlation_plot.png" width="500" />
 
 **Tools Used:**
 -	SQLAlchemy : connecting to Postgres database
