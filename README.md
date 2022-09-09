@@ -49,14 +49,14 @@ Exploring data allows us to better understand the relationship of the predictor 
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
 <p float="center">
-  <img src="/Images/ETL_0_vs_1.png" width="350" />
-  <img src="/Images/age_distribution.png" width="350" /> 
-  <img src="/Images/gender_distribution.png" width="350" />
-  <img src="/Images/paintype_distribution.png" width="350" />
-  <img src="/Images/bloodpressure_distribution.png" width="350" />
-  <img src="/Images/bloodsugar_distribution.png" width="350" />
-  <img src="/Images/cholesterol_distribution.png" width="350" />
-  <img src="/Images/heartrate_distribution.png" width="350" />
+  <img src="/Images/ETL_0_vs_1.png" width="400" />
+  <img src="/Images/age_distribution.png" width="400" /> 
+  <img src="/Images/gender_distribution.png" width="400" />
+  <img src="/Images/paintype_distribution.png" width="400" />
+  <img src="/Images/bloodpressure_distribution.png" width="400" />
+  <img src="/Images/bloodsugar_distribution.png" width="400" />
+  <img src="/Images/cholesterol_distribution.png" width="400" />
+  <img src="/Images/heartrate_distribution.png" width="400" />
 </p>
 
 In this process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
