@@ -49,17 +49,20 @@ Exploring data allows us to better understand the relationship of the predictor 
 ## Machine Learning Models:
 Since our response variable is binary categorical variable, we will be using classification algorithms such as: Logistic Regression, Random Forest Classifier, Decision Tree Classifier, K-Nearest Neighbor, and Gaussian Naive Bayes. We believe these models would be well fitted as our categorical variable classified as 0: Non-Carriers and 1: Heart Disease Carriers. We did considered the typical 80:20 ratio of 80% train and 20% test data split and adequate sample size in our testing. 
 
+**Scaling: Standardization :**
+The idea behind using standardization before applying machine learning algorithm is to transform you data such that its distribution will have mean value 0 and standard deviation as 1. We use Standard Scaling . Except Random Forest and Gaussian Naive Bayes algorithms do not require Feature Scaling. 
+
 #### Model 1: Decision Tree Classifier (notebook hyperlink)
--	About: why we chose, the %
+-	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
 -	Image Screen Shot
 ##### Model 2: Logistic Regression (notebook hyperlink)
--	Image Screen shot
+-	Description of the Model and Images, with analysis 
 ##### Model 3: Random Forest Classifier (notebook hyperlink)
--Image
+- Description of the Model and Image, with analysis
 ##### Model 4: K-Nearest Neighbor(notebook hyperlink)
--	Image
+-	 Description of the Model and Image of graphs, with analysis
 ##### Model 5: Gaussian Naive Bayes (notebook hyperlink)
--	Image 
+-	Description of the Model and Image of graphs, with analysis
 
 Data
 Images Folder
@@ -78,6 +81,6 @@ Scripts (All Model notebook)
 ## Conclusion:
 Supervised learning a type of machine learning model were a variable or variables is to represent a response. The goal of supervised learning is to make inference or make predictions . Algorithms are used to fit and select models for classification or prediction. In our case, we are using classification.
 
-As previously found, the model that scores the highest in accuracy is ____. 
+Overall, the models score similar results in accuracy score. However, the model that scores the highest in accuracy is ____. 
 
 For future We would also consider hypertune and set hyperparameters in future approaches. 
