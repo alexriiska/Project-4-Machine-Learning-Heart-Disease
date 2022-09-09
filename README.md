@@ -2,8 +2,8 @@
 <p align = "center">
     <img src="Resources/img1_heartbody.jpeg", width="1000"/>
 </p>
-***
-** Group 4 Members:** Alex Riiska, Laurane Gerber, Nikki Dao, Victoria Sandoval, Yuntian Xue
+
+**Group 4 Members:** Alex Riiska, Laurane Gerber, Nikki Dao, Victoria Sandoval, Yuntian Xue
 
 ### Project Goal: 
 
