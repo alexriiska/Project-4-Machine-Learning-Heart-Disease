@@ -63,9 +63,9 @@ The idea behind using standardization before applying machine learning algorithm
 -  	Decision Tree Classifier score 83% in accuracy. Below is the Heart Disease Prediction using Decision Tree graph		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
 #### Model 2: Logistic Regression (notebook hyperlink)
--	Description of the Model and Images, with analysis 
+-	Description of the Model and Images, with analysis . Laurane please include images of your interactive testing sample that you have built. 
 #### Model 3: Random Forest Classifier (notebook hyperlink)
-- Description of the Model and Image, with analysis
+- Description of the Model and Image, with analysis. Yuntian please double check if you have used Scaler in your analysis, as Random Forest Model does not need scaler.
 #### Model 4: K-Nearest Neighbor(notebook hyperlink)
 -	 Description of the Model and Image of graphs, with analysis
 #### Model 5: Gaussian Naive Bayes (notebook hyperlink)
