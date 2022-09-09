@@ -37,7 +37,7 @@ OUTLINE DATE IMAGE
 ## Data Preparation and Exploration:
 Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
-**Pre-procression Step:**  __[ Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Data_Exploration.ipynb)__
+**Pre-procression Step:**  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Data_Exploration.ipynb)__
 -   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
 <img align="center" src="/Images/ETL_outliers.png" width="1100" />
 
@@ -72,17 +72,17 @@ Since our response variable is binary categorical variable, we will be using cla
 **Scaling - Standardization :**
 The idea behind using standardization before applying machine learning algorithm is to transform you data such that its distribution will have mean value 0 and standard deviation as 1. We use Standard Scaling in our K-NN and Logistic Regression Models instead of Min and Max Scaler. Note that Decision Tree, Random Forest, and Gaussian Naive Bayes algorithms do not require Feature Scaling due to the nature that they are not sensitive to the variance in the data. 
 
-#### Model 1: Decision Tree Classifier  __[Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree.ipynb)__
+#### Model 1: Decision Tree Classifier  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree.ipynb)__
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
 -  	Decision Tree Classifier score 83% in accuracy. Below is the Heart Disease Prediction using Decision Tree graph		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
-#### Model 2: Logistic Regression  __[Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression%20Analysis.ipynb)__
+#### Model 2: Logistic Regression  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression%20Analysis.ipynb)__
 -	Description of the Model and Images, with analysis . Laurane please include images of your interactive testing sample that you have built. 
-#### Model 3: Random Forest Classifier __[Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Model.ipynb)__
+#### Model 3: Random Forest Classifier __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Model.ipynb)__
 - Description of the Model and Image, with analysis. Yuntian please double check if you have used Scaler in your analysis, as Random Forest Model does not need scaler.
-#### Model 4: K-Nearest Neighbor __[Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Heart%20Failure%20Analysis%20KNN_VS.ipynb)__
+#### Model 4: K-Nearest Neighbor __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Heart%20Failure%20Analysis%20KNN_VS.ipynb)__
 -	 Description of the Model and Image of graphs, with analysis
-#### Model 5: Gaussian Naive Bayes __[Click To See NoteBook Here](https://github.com/alexriiska/Project-4/blob/main/Gaussian%20Naive%20Bayes.ipynb)__
+#### Model 5: Gaussian Naive Bayes __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Gaussian%20Naive%20Bayes.ipynb)__
 -	Description of the Model and Image of graphs, with analysis, Alex please double check if you use Scaler in your analysis, as Naive Bayes does not need scaler.
 
 Data
