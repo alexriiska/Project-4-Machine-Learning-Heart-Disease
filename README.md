@@ -46,9 +46,9 @@ Exploring data allows us to better understand the relationship of the predictor 
 In this process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
 Using correlation function to compute pairwise correlations, we also found that the key importance features are OldPeak and Maximum Heart Rate have the strongest impact in our predictions.
 
-Correlation Heatmap             |  Correlation Table
+Features Importance Correlation Heatmap             |  Feature Importance Correlation Table
 :------------------------------:|:-------------------------:
-!<img align="center" src="/Images/correlation_plot.png" width="700" /> |  !<img align="center" src="/Images/correlation_plot.png" width="700" />
+!<img align="center" src="/Images/correlation_plot.png" width="700" /> |  !<img align="center" src="/Images/correlation_table.png" width="700" />
 
 
 **Tools Used:**
