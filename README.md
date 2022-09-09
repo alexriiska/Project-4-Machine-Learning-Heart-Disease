@@ -34,7 +34,7 @@ Data can be found in [Kaggle link](https://www.kaggle.com/datasets/fedesoriano/h
 
 OUTLINE DATE IMAGE
 
-## Data Preparation and Exploration:
+## Data Preparation and Exploration: __[NoteBook](https://github.com/alexriiska/Project-4/blob/main/Data_Exploration.ipynb)__
 Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
 **Pre-procression Step:**
