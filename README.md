@@ -44,7 +44,7 @@ Exploring data allows us to better understand the relationship of the predictor 
   <img
   src="/Images/ETL_outliers.png" width="1100"
   alt="Visualizing Outliers">
-  <figcaption>Visualizing Outliers</figcaption> align = "center"
+  <figcaption> How do I add "Visualizing Outliers" as a title for the above image? Help please! </figcaption> 
 </figure>
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
