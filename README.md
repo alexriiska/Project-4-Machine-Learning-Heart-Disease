@@ -54,14 +54,14 @@ The idea behind using standardization before applying machine learning algorithm
 
 #### Model 1: Decision Tree Classifier (notebook hyperlink)
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
--	Image Screen Shot
-##### Model 2: Logistic Regression (notebook hyperlink)
+	<img align="center" src="/Images/decision_tree_map.png" width="500" />
+#### Model 2: Logistic Regression (notebook hyperlink)
 -	Description of the Model and Images, with analysis 
-##### Model 3: Random Forest Classifier (notebook hyperlink)
+#### Model 3: Random Forest Classifier (notebook hyperlink)
 - Description of the Model and Image, with analysis
-##### Model 4: K-Nearest Neighbor(notebook hyperlink)
+#### Model 4: K-Nearest Neighbor(notebook hyperlink)
 -	 Description of the Model and Image of graphs, with analysis
-##### Model 5: Gaussian Naive Bayes (notebook hyperlink)
+#### Model 5: Gaussian Naive Bayes (notebook hyperlink)
 -	Description of the Model and Image of graphs, with analysis
 
 Data
