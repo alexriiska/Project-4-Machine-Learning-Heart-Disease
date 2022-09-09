@@ -42,9 +42,12 @@ Exploring data allows us to better understand the relationship of the predictor 
 <img align="center" src="/Images/ETL_outliers.png" width="1100" />
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
-Total Observations | Patient Gender|  Patient Age | Blood Sugar 
-:------------------------------:|:-------------------------:
-<img src="/Images/ETL_0_vs_1.png" width="250" /> |  <img align="center" src="/Images/gender_distribution.png" width="250" /> |  <img src="/Images/age_distribution.png" width="250" /> | <img src="/Images/bloodsugar_distribution.png" width="250" />
+<p float="left">
+  <img src="/Images/ETL_0_vs_1.png" width="250" />
+  <img src="/Images/age_distribution.png" width="250" /> 
+  <img src="/Images/gender_distribution.png" width="250" />
+  <img src="/Images/paintype_distribution.png" width="250" />
+</p>
 
 In this process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
 Using correlation function to compute pairwise correlations, we also found that the key importance features are OldPeak and Maximum Heart Rate have the strongest impact in our predictions.
