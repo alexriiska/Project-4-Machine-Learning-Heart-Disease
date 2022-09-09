@@ -38,10 +38,14 @@ OUTLINE DATE IMAGE
 Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
 **Pre-procression Step:**  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Data_Exploration.ipynb)__
--   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database
-| 			Visualizing Outliers	 		      | 
-| ------------------------------------------------------------------- | 
-| <img align="center" src="/Images/ETL_outliers.png" width="1100" />  | 
+-   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database 
+
+<figure>
+  <img
+  src="/Images/ETL_outliers.png" width="1100"
+  alt="Visualizing Outliers">
+  <figcaption>MDN Logo</figcaption>
+</figure>
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
 <p float="left">
