@@ -129,4 +129,4 @@ Supervised learning a type of machine learning model were a variable or variable
 
 Overall, the models score similar results in accuracy score. However, the Logistic Regression model that scores the highest in accuracy is 0.886. 
 
-For future We would also consider hypertune and set hyperparameters in future approaches. 
+For future we would also consider hypertune and set hyperparameters in future approaches. In addition, 21% of the dataset includes female readings and their diagnosis and ~19% of all cholesterol readings were 0. It would be interesting if adding more data for females and/or cholesterol would improve the accuracy for any of the models. 
