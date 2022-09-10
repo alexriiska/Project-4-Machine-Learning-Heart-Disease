@@ -126,5 +126,7 @@ The idea behind using standardization before applying machine learning algorithm
 
 ## Conclusion:
 Supervised learning is a type of machine learning model where a variable or variables is to represent a response. The goal of supervised learning is to make inferences or make predictions. Algorithms are used to fit and select models for classification or prediction. In our case, we are using classification.
+
 Overall, the models score similar results in accuracy score. However, the Logistic Regression model scores the highest in accuracy is 0.8860. This was surprising as our team believed a more perforate model would have given us a higher accuracy score. We deduced that the logistic model scored the highest because our classes were linearly separable. But if we had more time, we think other models would outperform the logistic model as they can become more tailored to the data set. In terms of efficiency, though, the logistic model is superior, so with limited time and this specific data set, the logistic model was more appropriate. 
+
 For the future, we would also consider hypertune and set hyperparameters in future approaches. In addition, 21% of the dataset includes female readings and their diagnosis, and ~19% of all cholesterol readings were 0. It would be interesting if adding more data for females and/or cholesterol would improve the accuracy of any of the models.
