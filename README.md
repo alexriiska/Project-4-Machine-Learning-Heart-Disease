@@ -88,7 +88,7 @@ The idea behind using standardization before applying machine learning algorithm
 
 #### Model 3: Random Forest Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Classifier.ipynb)
 -	A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. 
--	
+-	Data was preprocessed by `pd.get_dummies(df)` in order to transform string data points to binaries, and then split to train (80%) and test (20%) data sets. By importing `RandomForestClassifier` from `sklearn.ensemble`, we applied the classifier on the training data sets. We adjusted the `n_estimators`, which means the number of trees to build before the maximum voting or averages of predictions. When n_estimators = 170 we obtained the highest accuracy of 87.5%.
 
 #### Model 4: K-Nearest Neighbor [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/K-Nearest%20Neighbor.ipynb)
 -	 Description of the Model and Image of graphs, with analysis
@@ -107,7 +107,10 @@ The idea behind using standardization before applying machine learning algorithm
 -	Implementing the Gaussian Naive Bayes Model resulted in an accuracy of 88.26%.
 
 #### Model 6: Neural Network Modeling [Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Neural%20Network%20Modeling.ipynb)
--	
+-	A neural network is a simplified model of the way the human brain processes information. It works by simulating a large number of interconnected processing units that resemble abstract versions of neurons. The processing units are arranged in layers.
+
+-	We processed the data by transforming it into binary by `pd.get_dummies(df)`, and then standardized it by `StandardScaler` imported from `sklearn.preprocessing`. Data was split to train (80%) and test (20%) for modeling. The neural network model contained three hidden layers, with the activation function of “relu”, “sigmoid” and “sigmoid”. The model was fit with 300 epochs. The model fitted the training data very well with the loss only 0.1203 and the accuracy of 97.41%. However, the prediction accuracy is not as good. By evaluate the model by testing data sets,tThe final results showed that the model loss is 0.5112 and the accuracy is 84.24%. 
+
 
 [Data](Resources). 
 [Images Folder](Images). 
