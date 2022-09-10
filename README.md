@@ -53,7 +53,7 @@ Below is the scatter matrix that can help us easily see the different clusters b
 </p>
 
 In this process, we observed that heart disease carriers tends to be male, in late 50s, has low resting blood pressure, low cholesterol, and high resting heart rate will most likely at higher risk of Heart Disease with Asymtomatic Chest Pain.
-Using correlation function to compute pairwise correlations, we also found that the key importance features are OldPeak and Maximum Heart Rate have the strongest impact in our predictions.
+Using correlation function below to compute pairwise correlations, we also found that the key importance features are OldPeak and Maximum Heart Rate have the strongest impact in our predictions.
 
 Features Importance Correlation Heatmap             |  Feature Importance Correlation Table
 :------------------------------:|:-------------------------:
@@ -81,9 +81,8 @@ The idea behind using standardization before applying machine learning algorithm
 
 #### Model 1: Decision Tree Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree%20Classifier.ipynb)
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
--  	Decision Tree Classifier score 83% in accuracy. Below is the full-grown tree on the training set of Heart Disease Prediction		
+-  	Decision Tree Classifier score 83% in accuracy. Below is the full-grown tree on the training set of Heart Disease Prediction. Notice how the shade of the nodes gets darker as the “entropy” decreases. Lighter shade nodes have higher entropy than the darker ones. Also, the class labels have different colors. Here, Blue refers to “Heart Disease Carrier (1) where Orange refers to “Heart Disease Non-Carrier(0). 		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
--       Notice how the shade of the nodes gets darker as the “entropy” decreases. Lighter shade nodes have higher entropy than the darker ones. Also, the class labels have different colors. Here, Blue refers to “Heart Disease Carrier (1) where Orange refers to “Heart Disease Non-Carrier(0). 
 	
 #### Model 2: Logistic Regression [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression%20Analysis.ipynb)
 -	This model predicts whether something is true or false. Logistic regression is an algorithm for performing binary classification. It considers discrete and continuous data (unlike the linear model). With this model, we test to see if a variable’s effect on the prediction significantly differs from 0. If not, it means the variable is not helping the prediction. 
