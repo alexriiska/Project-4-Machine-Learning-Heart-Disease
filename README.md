@@ -83,7 +83,7 @@ The idea behind using standardization before applying machine learning algorithm
 -  	Decision Tree Classifier score 83% in accuracy. Below is the full-grown tree on the training set of Heart Disease Prediction		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
 	
-#### Model 2: Logistic Regression [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression.ipynb)
+#### Model 2: Logistic Regression [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression%20Analysis.ipynb)
 -	Description of the Model and Images, with analysis . Laurane please include images of your interactive testing sample that you have built. 
 
 #### Model 3: Random Forest Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Classifier.ipynb)
