@@ -32,8 +32,6 @@ Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking 
 | `Heartdisease` | Determines whether patient has heart disease; 1 – patient has heart disease, 0 – patient does not have heart disease |
 
 
-OUTLINE DATE IMAGE
-
 ## Data Preparation and Exploration:
 Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
