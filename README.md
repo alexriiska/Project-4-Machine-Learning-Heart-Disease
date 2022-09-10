@@ -21,7 +21,7 @@ Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking 
 | `Age` | Patient Age |
 | `Sex` | Patient Sex; F - Female, M - Male |
 | `ChestPainType` | ASY – Asymptomatic, ATA – Atypical Angina, NAP – Non-Anginal Pain, TA – Typical Angina |
-| `RestingBP` | Patient blood pressure at rest |
+| `RestingBP` | Patient systolic blood pressure at rest |
 | `Cholesterol` | Patient cholesterol level |
 | `FastingBS` | Patient blood sugar when fasting |
 | `RestingECG` | Patient’s electrocardiogram reading |
