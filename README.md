@@ -7,7 +7,7 @@
 
 ## Project Goal: 
 
-We aim to predict wheter patients have heart disease by training multiple maching learning models with the heart dataset, which contains different cardiovascular disease symptoms. We also intend to use ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to deciding and applying various machine learning models. Furthermore, we aim to evaluate different machine learning models' accuracy. 
+We aim to predict whether patients have heart disease by training multiple maching learning models with the heart dataset, which contains different cardiovascular disease symptoms. We also intend to use ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to deciding and applying various machine learning models. Furthermore, we aim to evaluate different machine learning models' accuracy. 
 
 ## Data Descriptions: 
 
