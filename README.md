@@ -7,7 +7,7 @@
 
 ## Project Goal: 
 
-By implementing multiple maching learning models, we aim to determine whether patients' heart disease related symtoms can be predicted by clinical cardiovascular diseases data. Using ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to deciding and applying various machine learning models. 
+We aim to predict wheter patients have heart disease by training multiple maching learning models with the heart dataset, which contains different cardiovascular disease symptoms. We also intend to use ETL method to clean data and EDA approach to analyze the data, as well as summarize the data characteristic to discover what hidden story lies within the data, prior to deciding and applying various machine learning models. Furthermore, we aim to evaluate different machine learning models' accuracy. 
 
 ## Data Descriptions: 
 
@@ -111,7 +111,7 @@ The idea behind using standardization before applying machine learning algorithm
 #### Model 6: Neural Network Modeling [Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Neural%20Network%20Modeling.ipynb)
 -	A neural network is a simplified model of the way the human brain processes information. It works by simulating a large number of interconnected processing units that resemble abstract versions of neurons. The processing units are arranged in layers.
 
--	We processed the data by transforming it into binary by `pd.get_dummies(df)`, and then standardized it by `StandardScaler` imported from `sklearn.preprocessing`. Data was split to train (80%) and test (20%) for modeling. The neural network model contained three hidden layers, with the activation function of “relu”, “sigmoid” and “sigmoid”. The model was fit with 300 epochs. The model fitted the training data very well with the loss only 0.1203 and the accuracy of 97.41%. However, the prediction accuracy is not as good. By evaluate the model by testing data sets,the final results showed that the model loss is 0.5112 and the accuracy is 84.24%. 
+-	We processed the data by transforming it into binary by `pd.get_dummies(df)`, and then standardized it by `StandardScaler` imported from `sklearn.preprocessing`. Data was split to train (80%) and test (20%) for modeling. The neural network model contained three hidden layers, with the activation function of “relu”, “sigmoid” and “sigmoid”. The model was fit with 300 epochs. The model fitted the training data very well with the loss only 0.1203 and the accuracy of 97.41%. However, the prediction accuracy is not as good. Different trails with different activation function, epoch number, neural units and hidden layers were tries, same results showed that neural network was powerful in fitting the data while had limited prediction accuracy. By evaluate the model by testing data sets,the final results showed that the model loss is 0.5112 and the accuracy is 84.24%. 
  
 
 **Results:**
