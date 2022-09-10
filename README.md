@@ -117,7 +117,7 @@ Scripts (All Model notebook).
 **Results:**
 | Model Name | Accuracy |
 | --- | --- |
-| Logistic Regression | 0. |
+| Logistic Regression | 0.886 |
 | Random Forest | 0.875 |
 | Gaussian Naive Bayes | 0.8826   |
 | KNN | 0.8804 |
