@@ -37,7 +37,7 @@ OUTLINE DATE IMAGE
 ## Data Preparation and Exploration:
 Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
-**Pre-procression Step:**  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Data_Exploration.ipynb)__
+**Pre-procression Step:**  [Click Here To See NoteBook](Data_Exploration.ipynb)
 -   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database 
 
 <figure>
@@ -78,30 +78,43 @@ Since our response variable is binary categorical variable, we will be using cla
 **Scaling - Standardization :**
 The idea behind using standardization before applying machine learning algorithm is to transform you data such that its distribution will have mean value 0 and standard deviation as 1. We use Standard Scaling in our K-NN and Logistic Regression Models instead of Min and Max Scaler. Note that Decision Tree, Random Forest, and Gaussian Naive Bayes algorithms do not require Feature Scaling due to the nature that they are not sensitive to the variance in the data. 
 
-#### Model 1: Decision Tree Classifier  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree.ipynb)__
+#### Model 1: Decision Tree Classifier  [Click Here To See NoteBook](Decision Tree Classifier.ipynb)
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
 -  	Decision Tree Classifier score 83% in accuracy. Below is the full-grown tree on the training set of Heart Disease Prediction		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
-#### Model 2: Logistic Regression  __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression%20Analysis.ipynb)__
+	
+#### Model 2: Logistic Regression  [Click Here To See NoteBook](Logistic Regression.ipynb)
 -	Description of the Model and Images, with analysis . Laurane please include images of your interactive testing sample that you have built. 
-#### Model 3: Random Forest Classifier __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Model.ipynb)__
+#### Model 3: Random Forest Classifier [Click Here To See NoteBook](Random Forest Classifier.ipynb)
 - Description of the Model and Image, with analysis. Yuntian please double check if you have used Scaler in your analysis, as Random Forest Model does not need scaler.
-#### Model 4: K-Nearest Neighbor __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Heart%20Failure%20Analysis%20KNN_VS.ipynb)__
+- 	
+#### Model 4: K-Nearest Neighbor [Click Here To See NoteBook](K-Nearest Neighbor.ipynb)
 -	 Description of the Model and Image of graphs, with analysis
-#### Model 5: Gaussian Naive Bayes __[Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Gaussian%20Naive%20Bayes.ipynb)__
--	Description of the Model and Image of graphs, with analysis, Alex please double check if you use Scaler in your analysis, as Naive Bayes does not need scaler.
+-	 K-Nearest Neighbors was used to classify whether measurements of certain vitals along with other cardiogram readings can determine whether a patient has heart disease. The dataset included ~55% examples of patients that were diagnosed with heart disease and ~44% that were not. Before training and implementing the KNN algorithm from Sci-Kit learn, a few categories within the dataset needed to be assigned to numeric values.
 
-Data
-Images Folder
-Scripts (All Model notebook)
+-	 By simply plotting the data, it was found that there were many strong indicators as to whether or not a patient’s readings would result to heart disease (e.g. MaxHeartRate, Cholesterol, BloodPressure, ST_Slope, Oldpeak, and PatientAge). As these readings vary in ranges of scale, it was important to normalize the entire dataset and bring the scales closer together.
+
+-	 X inputs consisted of all of the columns except HeartDisease, Y output was HeartDisease (0 or 1). An 80%/20% split was used to train and test the data. After a few different tries, it was found that an N=3 returned the highest accuracy of 88.04%.
+#### Model 5: Gaussian Naive Bayes [Click Here To See NoteBook](Gaussian Naive Bayes.ipynb)
+-	Description of the Model and Image of graphs, with analysis, Alex please double check if you use Scaler in your analysis, as Naive Bayes does not need scaler.
+-	Per the documentation provided by sci-kit learn, the GaussianNB module implements the Gaussian Naive Bayes algorithm for classification. Naive Bayes is considered one of the easiest and fastest to implement classification methods. This classification method facilitates predictions about independent features using efficient supervised learning because the classifiers require a modest amount of training data. Additionally, dealing with continuous data allows us to assume that the distribution of the values follows a Gaussian (normal) distribution.
+
+-	We first transformed the category data in the heart dataset into binary values using the get_dummies method from the pandas library. To further preprocess the data, we separated the HeartDisease column, the dependent variable, from the independent variables and normalized the data. Lastly, the data was split for training and testing.
+
+-	Implementing the Gaussian Naive Bayes Model resulted in an accuracy of 88.26%.
+
+
+[Data](Resources). 
+[Images Folder](Images). 
+Scripts (All Model notebook). 
 
 **Results:**
 | Model Name | Accuracy |
 | --- | --- |
 | Logistic Regression | 0. |
 | Random Forest | 0.875 |
-| Gaussian Naive Bayes | 0.883   |
-| KNN | 0. |
+| Gaussian Naive Bayes | 0.8826   |
+| KNN | 0.8804 |
 | Decision Tree | 0.8384 |
 | Neural Network | 0. |
 
