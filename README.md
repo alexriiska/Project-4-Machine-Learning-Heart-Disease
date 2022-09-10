@@ -112,11 +112,7 @@ The idea behind using standardization before applying machine learning algorithm
 -	A neural network is a simplified model of the way the human brain processes information. It works by simulating a large number of interconnected processing units that resemble abstract versions of neurons. The processing units are arranged in layers.
 
 -	We processed the data by transforming it into binary by `pd.get_dummies(df)`, and then standardized it by `StandardScaler` imported from `sklearn.preprocessing`. Data was split to train (80%) and test (20%) for modeling. The neural network model contained three hidden layers, with the activation function of “relu”, “sigmoid” and “sigmoid”. The model was fit with 300 epochs. The model fitted the training data very well with the loss only 0.1203 and the accuracy of 97.41%. However, the prediction accuracy is not as good. By evaluate the model by testing data sets,the final results showed that the model loss is 0.5112 and the accuracy is 84.24%. 
-
-
-[Data](Resources). 
-[Images Folder](Images). 
-Scripts (All Model notebook). 
+ 
 
 **Results:**
 | Model Name | Accuracy |
