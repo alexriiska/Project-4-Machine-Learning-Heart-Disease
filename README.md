@@ -65,6 +65,14 @@ Features Importance Correlation Heatmap             |  Feature Importance Correl
 <img align="center" src="/Images/correlation_plot.png" width="700" /> |  <img align="center" src="/Images/correlation_table.png" width="700" />
 
 
+<img align="center" src="/Images/VS_HeartRatesVSChestPain.png" width="700" /> 
+
+Patients diagnosed with Heart Disease are more likely to have lower Heart Rates and Chest Pain when Exercising. 
+
+<img align="center" src="/Images/VS_OldPeakVSST_Slope.png" width="700" />
+
+Patients diagnosed with Heart Disease will most likely produce abnormal Oldpeak readings on an ECG (Oldpeak >0) and flat ST_Slopes in their heart rate (ST_Slope =0) 
+
 **Tools Used:**
 -	SQLAlchemy : connecting to Postgres database
 -	Python SKLearn libraries
