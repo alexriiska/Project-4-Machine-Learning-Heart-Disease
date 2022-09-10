@@ -78,24 +78,26 @@ Since our response variable is binary categorical variable, we will be using cla
 **Scaling - Standardization :**
 The idea behind using standardization before applying machine learning algorithm is to transform you data such that its distribution will have mean value 0 and standard deviation as 1. We use Standard Scaling in our K-NN and Logistic Regression Models instead of Min and Max Scaler. Note that Decision Tree, Random Forest, and Gaussian Naive Bayes algorithms do not require Feature Scaling due to the nature that they are not sensitive to the variance in the data. 
 
-#### Model 1: Decision Tree Classifier  [Click Here To See NoteBook](Decision Tree Classifier.ipynb)
+#### Model 1: Decision Tree Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Decision%20Tree%20Classifier.ipynb)
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
 -  	Decision Tree Classifier score 83% in accuracy. Below is the full-grown tree on the training set of Heart Disease Prediction		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
 	
-#### Model 2: Logistic Regression  [Click Here To See NoteBook](Logistic Regression.ipynb)
+#### Model 2: Logistic Regression [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression.ipynb)
 -	Description of the Model and Images, with analysis . Laurane please include images of your interactive testing sample that you have built. 
-#### Model 3: Random Forest Classifier [Click Here To See NoteBook](Random Forest Classifier.ipynb)
+
+#### Model 3: Random Forest Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Classifier.ipynb)
 - Description of the Model and Image, with analysis. Yuntian please double check if you have used Scaler in your analysis, as Random Forest Model does not need scaler.
-- 	
-#### Model 4: K-Nearest Neighbor [Click Here To See NoteBook](K-Nearest Neighbor.ipynb)
+
+#### Model 4: K-Nearest Neighbor [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/K-Nearest%20Neighbor.ipynb)
 -	 Description of the Model and Image of graphs, with analysis
 -	 K-Nearest Neighbors was used to classify whether measurements of certain vitals along with other cardiogram readings can determine whether a patient has heart disease. The dataset included ~55% examples of patients that were diagnosed with heart disease and ~44% that were not. Before training and implementing the KNN algorithm from Sci-Kit learn, a few categories within the dataset needed to be assigned to numeric values.
 
 -	 By simply plotting the data, it was found that there were many strong indicators as to whether or not a patient’s readings would result to heart disease (e.g. MaxHeartRate, Cholesterol, BloodPressure, ST_Slope, Oldpeak, and PatientAge). As these readings vary in ranges of scale, it was important to normalize the entire dataset and bring the scales closer together.
 
 -	 X inputs consisted of all of the columns except HeartDisease, Y output was HeartDisease (0 or 1). An 80%/20% split was used to train and test the data. After a few different tries, it was found that an N=3 returned the highest accuracy of 88.04%.
-#### Model 5: Gaussian Naive Bayes [Click Here To See NoteBook](Gaussian Naive Bayes.ipynb)
+
+#### Model 5: Gaussian Naive Bayes [Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Neural%20Network%20Modeling.ipynb)
 -	Description of the Model and Image of graphs, with analysis, Alex please double check if you use Scaler in your analysis, as Naive Bayes does not need scaler.
 -	Per the documentation provided by sci-kit learn, the GaussianNB module implements the Gaussian Naive Bayes algorithm for classification. Naive Bayes is considered one of the easiest and fastest to implement classification methods. This classification method facilitates predictions about independent features using efficient supervised learning because the classifiers require a modest amount of training data. Additionally, dealing with continuous data allows us to assume that the distribution of the values follows a Gaussian (normal) distribution.
 
