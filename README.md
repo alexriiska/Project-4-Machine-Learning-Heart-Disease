@@ -131,6 +131,6 @@ Scripts (All Model notebook).
 ## Conclusion:
 Supervised learning a type of machine learning model were a variable or variables is to represent a response. The goal of supervised learning is to make inference or make predictions . Algorithms are used to fit and select models for classification or prediction. In our case, we are using classification.
 
-Overall, the models score similar results in accuracy score. However, the model that scores the highest in accuracy is 0.886. 
+Overall, the models score similar results in accuracy score. However, the Logistic Regression model that scores the highest in accuracy is 0.886. 
 
 For future We would also consider hypertune and set hyperparameters in future approaches. 
