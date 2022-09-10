@@ -87,7 +87,8 @@ The idea behind using standardization before applying machine learning algorithm
 -	The logistic regression does have a problem in which you can have too many variables and overfit the data. This usually happens in the case when the model is trained on small amounts of training data with lots of features. Here I am using 18 features and 917 entries. Therefore I should regularize the data, which makes it a lot more complicated and can lead to the model underfitting. It is tough to obtain complex relationships using logistic regression. With all these parameters I believe that a more powerful and compact algorithm can easily outperform this. 
 
 #### Model 3: Random Forest Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Classifier.ipynb)
-- Description of the Model and Image, with analysis. Yuntian please double check if you have used Scaler in your analysis, as Random Forest Model does not need scaler.
+-	A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. 
+-	
 
 #### Model 4: K-Nearest Neighbor [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/K-Nearest%20Neighbor.ipynb)
 -	 Description of the Model and Image of graphs, with analysis
@@ -106,7 +107,7 @@ The idea behind using standardization before applying machine learning algorithm
 -	Implementing the Gaussian Naive Bayes Model resulted in an accuracy of 88.26%.
 
 #### Model 6: Neural Network Modeling [Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Neural%20Network%20Modeling.ipynb)
--	W
+-	
 
 [Data](Resources). 
 [Images Folder](Images). 
@@ -120,11 +121,11 @@ Scripts (All Model notebook).
 | Gaussian Naive Bayes | 0.8826   |
 | KNN | 0.8804 |
 | Decision Tree | 0.8384 |
-| Neural Network | 0. |
+| Neural Network | 0.8424 |
 
 ## Conclusion:
 Supervised learning a type of machine learning model were a variable or variables is to represent a response. The goal of supervised learning is to make inference or make predictions . Algorithms are used to fit and select models for classification or prediction. In our case, we are using classification.
 
-Overall, the models score similar results in accuracy score. However, the model that scores the highest in accuracy is ____. 
+Overall, the models score similar results in accuracy score. However, the model that scores the highest in accuracy is 0.886. 
 
 For future We would also consider hypertune and set hyperparameters in future approaches. 
