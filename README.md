@@ -35,15 +35,10 @@ Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking 
 ## Data Preparation and Exploration:
 Exploring data allows us to better understand the relationship of the predictor and its key factors. Here we generated the descriptive statistic summary for Patient Age, Blood Pressure, Cholesterol, Blood Sugar, Heart Rate, Old Peak (Numeric value measured in depression), and Heart Disease. This step helped us determine which Machine Learning Models are best to implement.
 
-**Pre-procression Step:**  [Click Here To See NoteBook](Data_Exploration.ipynb)
--   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database 
-
-<figure>
-  <img
-  src="/Images/ETL_outliers.png" width="1100"
-  alt="Visualizing Outliers">
-  <figcaption> How do I add "Visualizing Outliers" as a title for the above image? Help please! </figcaption> 
-</figure>
+**Pre-processing: [Click Here To See NoteBook](Data_Exploration.ipynb)**
+-   ETL – Removing null values, renaming columns name, transform objects from string to integer, identify outliers, load from Postgres database.
+Below is the scatter matrix that can help us easily see the different clusters based on difference measures of each variable, as well as spotting out potential outliers.  The clusters are color scale based that shows correlation between variables. 
+<img src="/Images/ETL_outliers.png" width="1100" />
 
 -   EDA – Scatter Matrix Plot, Bar Plot, Line Plot, and Heatmap to demonstrate data distribution and correlation between importance features
 <p float="center">
@@ -65,11 +60,11 @@ Features Importance Correlation Heatmap             |  Feature Importance Correl
 <img align="center" src="/Images/correlation_plot.png" width="700" /> |  <img align="center" src="/Images/correlation_table.png" width="700" />
 
 
-<img align="center" src="/Images/VS_HeartRatesVSChestPain.png" width="700" /> 
+<img align="center" src="/Images/VS_HeartRatesVSChestPain.png" width="1000" /> 
 
 Patients diagnosed with Heart Disease are more likely to have lower Heart Rates and Chest Pain when Exercising. 
 
-<img align="center" src="/Images/VS_OldPeakVSST_Slope.png" width="700" />
+<img align="center" src="/Images/VS_OldPeakVSST_Slope.png" width="1000" />
 
 Patients diagnosed with Heart Disease will most likely produce abnormal Oldpeak readings on an ECG (Oldpeak >0) and flat ST_Slopes in their heart rate (ST_Slope =0) 
 
@@ -88,18 +83,19 @@ The idea behind using standardization before applying machine learning algorithm
 -	Decision Tree technique uses a upside down tree-like structure in which each condition (leaf) splits at decision making points (branch). This methodology can be applied to solve in both classification and regression problems. To "trim" down the tree structure in prevention of excessive complex splits, we've set the the minimum number of training inputs to use as 5, and the maximum depth as 3, which refers to the length of the longest path from the root to a leaf.
 -  	Decision Tree Classifier score 83% in accuracy. Below is the full-grown tree on the training set of Heart Disease Prediction		
 	<img align="center" src="/Images/decision_tree_map.png" width="1000" />
+-       Notice how the shade of the nodes gets darker as the “entropy” decreases. Lighter shade nodes have higher entropy than the darker ones. Also, the class labels have different colors. Here, Blue refers to “Heart Disease Carrier (1) where Orange refers to “Heart Disease Non-Carrier(0). 
 	
 #### Model 2: Logistic Regression [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Logistic%20Regression%20Analysis.ipynb)
 -	This model predicts whether something is true or false. Logistic regression is an algorithm for performing binary classification. It considers discrete and continuous data (unlike the linear model). With this model, we test to see if a variable’s effect on the prediction significantly differs from 0. If not, it means the variable is not helping the prediction. 
 -	We fit the line by calculating “maximum likelihood.” This is done by picking a probability scaled by your independent variable, and you use that to calculate the likelihood of observing whether the binary dependent variable is incorrect. You would do this for each data point. Finally, we would multiply all those likelihoods together: creating the logistic curve. This would be done thousands of times to find the logistic curve with the largest likelihood. Here we get a test score of 89.13%. The regression we get from the logistic model has an 88.60% accuracy. 
 -	The logistic regression does have a problem in which you can have too many variables and overfit the data. This usually happens in the case when the model is trained on small amounts of training data with lots of features. Here I am using 18 features and 917 entries. Therefore I should regularize the data, which makes it a lot more complicated and can lead to the model underfitting. It is tough to obtain complex relationships using logistic regression. With all these parameters I believe that a more powerful and compact algorithm can easily outperform this. 
+-	Fun Stuff: Visit notebook to experience live interactive prediction based on your personal data!
 
 #### Model 3: Random Forest Classifier [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/Random%20Forest%20Classifier.ipynb)
 -	A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. 
 -	Data was preprocessed by `pd.get_dummies(df)` in order to transform string data points to binaries, and then split to train (80%) and test (20%) data sets. By importing `RandomForestClassifier` from `sklearn.ensemble`, we applied the classifier on the training data sets. We adjusted the `n_estimators`, which means the number of trees to build before the maximum voting or averages of predictions. When n_estimators = 170 we obtained the highest accuracy of 87.5%.
 
 #### Model 4: K-Nearest Neighbor [Click Here To See Notebook](https://github.com/alexriiska/Project-4/blob/main/K-Nearest%20Neighbor.ipynb)
--	 Description of the Model and Image of graphs, with analysis
 -	 K-Nearest Neighbors was used to classify whether measurements of certain vitals along with other cardiogram readings can determine whether a patient has heart disease. The dataset included ~55% examples of patients that were diagnosed with heart disease and ~44% that were not. Before training and implementing the KNN algorithm from Sci-Kit learn, a few categories within the dataset needed to be assigned to numeric values.
 
 -	 By simply plotting the data, it was found that there were many strong indicators as to whether or not a patient’s readings would result to heart disease (e.g. MaxHeartRate, Cholesterol, BloodPressure, ST_Slope, Oldpeak, and PatientAge). As these readings vary in ranges of scale, it was important to normalize the entire dataset and bring the scales closer together.
@@ -107,7 +103,6 @@ The idea behind using standardization before applying machine learning algorithm
 -	 X inputs consisted of all of the columns except HeartDisease, Y output was HeartDisease (0 or 1). An 80%/20% split was used to train and test the data. After a few different tries, it was found that an N=3 returned the highest accuracy of 88.04%.
 
 #### Model 5: Gaussian Naive Bayes [Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Neural%20Network%20Modeling.ipynb)
--	Description of the Model and Image of graphs, with analysis, Alex please double check if you use Scaler in your analysis, as Naive Bayes does not need scaler.
 -	Per the documentation provided by sci-kit learn, the GaussianNB module implements the Gaussian Naive Bayes algorithm for classification. Naive Bayes is considered one of the easiest and fastest to implement classification methods. This classification method facilitates predictions about independent features using efficient supervised learning because the classifiers require a modest amount of training data. Additionally, dealing with continuous data allows us to assume that the distribution of the values follows a Gaussian (normal) distribution.
 
 -	We first transformed the category data in the heart dataset into binary values using the get_dummies method from the pandas library. To further preprocess the data, we separated the HeartDisease column, the dependent variable, from the independent variables and normalized the data. Lastly, the data was split for training and testing.
