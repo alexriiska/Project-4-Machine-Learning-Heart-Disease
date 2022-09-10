@@ -105,6 +105,8 @@ The idea behind using standardization before applying machine learning algorithm
 
 -	Implementing the Gaussian Naive Bayes Model resulted in an accuracy of 88.26%.
 
+#### Model 6: Neural Network Modeling [Click Here To See NoteBook](https://github.com/alexriiska/Project-4/blob/main/Neural%20Network%20Modeling.ipynb)
+-	W
 
 [Data](Resources). 
 [Images Folder](Images). 
